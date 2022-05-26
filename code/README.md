@@ -27,11 +27,13 @@
 具体状态转换见（infoproc.c/infoproc.h，
   
 `void command2clawinfo(usercommand *uc,clawinfo *ci,MotorInfo m[4])`，
+
 `void motor2clawinfo(clawinfo *ci,MotorInfo m[4])`，
+
 `void claw2motorinfo(clawinfo *ci,MotorInfo m[4])`)。
 
 
-**电机通断电可以单独控制，** 如单独断开电机二的电流需输入0xff 0x00 0x01（电机一通电）0x00 0x00（电机二断电）0x00 0x01（电机三通电） 0x00 0x01（电机四通电） 0x10 0x11（校验） 0x0a，具体转化详见（uart3.c/uart3.h，
+**电机通断电可以单独控制，** 如单独断开电机二的电流需输入0xff 0x00 0x01（电机一通电）0x00 0x00（电机二断电）0x00 0x01（电机三通电） 0x00 0x01（电机四通电） 0x10 0x11（校验） 0x0a，具体转换详见（uart3.c/uart3.h，
 
 `void RX_Decoder(uint8_t *buf, usercommand *uc)`）。
 
@@ -68,5 +70,5 @@
 
 `void sendmestopc(void)`)。
 
-电机控制算法详见（motorlib.c/motorlib.h）
+电机控制算法详见（motorlib.c/motorlib.h）。
 
