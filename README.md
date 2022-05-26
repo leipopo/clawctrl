@@ -2,6 +2,10 @@
 
 using a specific protocol（see in code file） on uart to control a four fingers hand moving to a certain position or use a constant force to garb a object
 
+![claw with a RoboMaster gold ore without ctrl](/cad/img/p1.jpg)
+
+![claw with a RoboMaster gold ore](/cad/img/p1.jpg)
+
 # building on 
 robomaster m2006&c610 kit
 
