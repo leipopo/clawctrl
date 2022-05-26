@@ -19,7 +19,7 @@ void motorctrl()
 	{
 		mspid[i].kp=400;
 		mspid[i].ki=5;
-		mspid[i].kd=100;
+		mspid[i].kd=50;
 		mapid[i].kp=10;
 		mapid[i].ki=0;
 		mapid[i].kd=0;

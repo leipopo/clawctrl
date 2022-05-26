@@ -121,6 +121,7 @@ void command2clawinfo(usercommand *uc,clawinfo *ci,MotorInfo m[4])
 				ci->tarmotorinfo.angle[i]=ci->curmotorinfo.angle[i];
 				
 			}
+			ci->clawmode=0x02;
 		}break;
 		
 		case 0x03:
@@ -130,7 +131,7 @@ void command2clawinfo(usercommand *uc,clawinfo *ci,MotorInfo m[4])
 				ci->tarmotorinfo.angle[i]=ci->curmotorinfo.angle[i];
 				uc->motortorque[i]=0;
 			}
-			ci->clawmode=0x06;
+			ci->clawmode=0x03;
 		}break;
 		
 		case 0x04:

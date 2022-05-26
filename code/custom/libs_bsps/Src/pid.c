@@ -41,6 +41,8 @@ void PID_angle_calc(PID_regulator *pid,float timetick,float angle_parameter)
 
 void PID_clear(PID_regulator *pid)
 {
+	pid->tar=0;
+	pid->cur=0;
 	pid->err[0] = 0;
 	pid->err[1] = 0;
 	pid->componentKp = 0;
