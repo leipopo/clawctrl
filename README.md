@@ -1,6 +1,6 @@
 # An end effector 
 
-using a specific protocol on uart to control a four fingers hand moving to a certain position or use a constant force to garb a object
+using a specific protocol（see in code file） on uart to control a four fingers hand moving to a certain position or use a constant force to garb a object
 
 # building on 
 robomaster m2006&c610 kit
