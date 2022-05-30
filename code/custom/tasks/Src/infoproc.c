@@ -71,6 +71,10 @@ void command2clawinfo(usercommand *uc,clawinfo *ci,MotorInfo m[4])
 				{			
 					ci->motorstate[i]=0x01;
 					m[i].tempdata.angle=0.f;
+					minfo[0].parameter.angle_limit[1]=maxfa;
+					minfo[1].parameter.angle_limit[1]=maxfa;
+					minfo[2].parameter.angle_limit[1]=maxpa;
+					minfo[3].parameter.angle_limit[0]=minpa;
 				}	
 			}
 			ci->clawmode=uc->modeset;
@@ -248,7 +252,10 @@ void motor2clawinfo(clawinfo *ci,MotorInfo m[4])
 		if((ci->motorstate[0]==0x10&&ci->motorstate[1]==0x10&&ci->motorstate[2]==0x10&&ci->motorstate[3]==0x10)&&ci->clawmode!=0x02)
 		{
 			ci->clawmode=0x05;
-			
+			minfo[0].parameter.angle_limit[1]=0;
+			minfo[1].parameter.angle_limit[1]=0;
+			minfo[2].parameter.angle_limit[1]=0;
+			minfo[3].parameter.angle_limit[0]=0;
 		}
 
 	}

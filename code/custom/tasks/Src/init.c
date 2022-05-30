@@ -14,4 +14,6 @@ void device_init(void)
 	{
 		can_filter_init();
 	}
+	
+	MX_IWDG_Init();
 }

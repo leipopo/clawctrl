@@ -45,6 +45,7 @@ extern "C" {
 #include "ctrltask.h"
 #include "config.h"
 #include "init.h"
+#include "iwdg.h"
 #include "stm32f4xx_hal_gpio.h"
 /* USER CODE END Includes */
 

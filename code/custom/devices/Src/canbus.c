@@ -94,18 +94,22 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
 			case 0x201:
 			{
 				canrxtomotinfo(&minfo[0],rx_data);
+				HAL_IWDG_Refresh(&hiwdg);
 			}break;
 			case 0x202:
 			{
 				canrxtomotinfo(&minfo[1],rx_data);
+				HAL_IWDG_Refresh(&hiwdg);
 			}break;
 			case 0x203:
 			{
 				canrxtomotinfo(&minfo[2],rx_data);
+				HAL_IWDG_Refresh(&hiwdg);
 			}break;
 			case 0x204:
 			{
 				canrxtomotinfo(&minfo[3],rx_data);
+				HAL_IWDG_Refresh(&hiwdg);
 			}break;
 			
 		}
