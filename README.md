@@ -6,14 +6,14 @@ using a specific protocol（see in code file） on uart to control a four finger
 
 ![claw with a RoboMaster gold ore](/cad/img/p2.jpg)
 
-# Building on 
+# Built with 
 RoboMaster m2006&c610 kit
 
 3d_printed abs and pet-cf (filament from Fusrock)
 
 cnc carbon fibre sheet 
             
-# Coding on 
+# Coded on 
 a stm32(RoboMaster aboard with f427) with MDK and cubemx 
 
 # Content
